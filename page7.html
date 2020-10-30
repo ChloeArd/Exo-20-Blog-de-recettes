@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Formulaire</title>
+</head>
+<body>
+<a href="index.html"> Retour</a>
+<form action="chloe.ardoise@gmail.com" method="get" enctype="text/plain">
+        <div>
+            <label for="name"> Nom de l'utilisateur:</label>
+            <input type="name" placeholder="Votre prénom" required>
+        </div>
+        <div>
+            <label for="sex"> Sexe:</label>
+            <select>
+                <option name="sexe" value="nothing"> </option>
+                <option name="sexe" value="homme"> Homme</option>
+                <option name="sexe" value="femme"> Femme</option>
+            </select>
+        </div>
+        <div>
+            <label for="email"> Votre adresse mail:</label>
+            <input type="email" placeholder="Votre adresse mail" required>
+        </div>
+        <div>
+            <label for="text"> Demande d'informations:</label>
+            <textarea name="user_text" placeholder="Votre commentaire..."></textarea>
+        </div>
+        <div>
+            <label for="choose"> Avis des recettes:</label>
+            <input type="radio" value="good"> Bien
+            <input type="radio" value="average"> Moyen
+            <input type="radio" value="bad"> Nul
+        </div>
+        <div>
+            <input type="reset" value="Effacer" name="reset" >
+        </div>
+            <button type="submit">Envoyer</button>
+
+</body>
+</html>
