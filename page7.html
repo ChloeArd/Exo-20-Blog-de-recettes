@@ -7,6 +7,7 @@
     <style>
         body {
             background-color: #DFDFDE;
+            position: fixed;
         }
         body {
             text-align: center;
@@ -27,38 +28,43 @@
 
 </head>
 <body>
-    <h1> Formulaire de demandes d'informations:</h1>
     <div class="retour">
         <a href="index.html"> Retour</a>
     </div>
+    <h1> Formulaire de demandes d'informations:</h1>
+
 
     <form action="mailto:chloe.ardoise@gmail.com" method="get" enctype="text/plain">
-        <div>
-            <label for="name"> Nom de l'utilisateur:</label>
-            <input type="name" placeholder="Votre prénom" required>
-        </div>
-        <div>
-            <label for="sex"> Sexe:</label>
-            <select>
-                <option name="sexe" value="nothing"></option>
-                <option name="sexe" value="homme"> Homme</option>
-                <option name="sexe" value="femme"> Femme</option>
-            </select>
-        </div>
-        <div>
-            <label for="email"> Votre adresse mail:</label>
-            <input type="email" placeholder="Votre adresse mail" required>
-        </div>
-        <div>
-            <label for="text"> Demande d'informations:</label>
-            <textarea name="user_text" placeholder="Votre commentaire..."></textarea>
-        </div>
-        <div>
-            <label for="choose"> Avis des recettes:</label>
-            <input type="radio" value="good"> Bien
-            <input type="radio" value="average"> Moyen
-            <input type="radio" value="bad"> Nul
-        </div>
+        <fieldset>
+            <div>
+                <label for="name"> Nom de l'utilisateur:</label>
+                <input type="name" placeholder="Votre prénom" required>
+            </div>
+            <div>
+                <label for="sex"> Sexe:</label>
+                <select>
+                    <option name="sexe" value="nothing"></option>
+                    <option name="sexe" value="homme"> Homme</option>
+                    <option name="sexe" value="femme"> Femme</option>
+                </select>
+            </div>
+            <div>
+                <label for="email"> Votre adresse mail:</label>
+                <input type="email" placeholder="Votre adresse mail" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="text"> Demande d'informations:</label>
+                <textarea name="user_text" placeholder="Votre commentaire..."></textarea>
+            </div>
+            <div>
+                <label for="choose"> Avis des recettes:</label>
+                <input type="radio" value="good"> Bien
+                <input type="radio" value="average"> Moyen
+                <input type="radio" value="bad"> Nul
+            </div>
+        </fieldset>
         <div>
             <input type="reset" value="Effacer" name="reset">
         </div>
